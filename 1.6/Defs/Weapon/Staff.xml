@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <ThingDef ParentName="pphhyy_Base_SharpSword_Oversize">
+        <defName>pphhyy_BoneReapers_StaffofNagash</defName>
+        <label>Staff of Nagash</label>
+        <description>This staff was created by the Arch Necromancer Nagash to harness the reservation of dark magic within the accursed Black Pyramid.</description>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <texPath>Weapons/ArkhanStaff</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <weaponTags>
+            <li>pphhyy_BoneReapers_ArkhanStaff</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MeditationFocusGain>0.25</MeditationFocusGain>
+            <PsychicSensitivityOffset>0.50</PsychicSensitivityOffset>
+        </equippedStatOffsets>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_BladelinkWeapon">
+                <biocodeOnEquip>false</biocodeOnEquip>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Royalty" Class="CompProperties_GeneratedName">
+                <nameMaker>NamerWeaponBladelink</nameMaker>
+            </li>
+        </comps>
+        <tradeNeverStack>true</tradeNeverStack>
+        <relicChance>3</relicChance>
+        <tickerType>Normal</tickerType>
+        <costList>
+            <Gold>7</Gold>
+            <pphhyy_GreaterSoul>2</pphhyy_GreaterSoul>
+        </costList>
+        <statBases>
+            <WorkToMake>50000</WorkToMake>
+            <Mass>4</Mass>
+            <AccuracyTouch>0.5</AccuracyTouch>
+            <AccuracyShort>0.55</AccuracyShort>
+            <AccuracyMedium>0.50</AccuracyMedium>
+            <AccuracyLong>0.40</AccuracyLong>
+            <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+        </statBases>
+        <tools>
+            <li>
+                <label>limb</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>12</power>
+                <cooldownTime>1.9</cooldownTime>
+            </li>
+        </tools>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>pphhyy_BoneReapers_ArkhanBolt</defaultProjectile>
+                <warmupTime>1.75</warmupTime>
+                <range>27.9</range>
+                <soundCast>Bow_Recurve</soundCast>
+            </li>
+        </verbs>
+        <smeltable>true</smeltable>
+        <burnableByRecipe>true</burnableByRecipe>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers Inherit="False">
+                <li>pphhyy_HathiyarBench</li>
+            </recipeUsers>
+            <researchPrerequisite>pphhyy_SoulWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedBoneReaper</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>pphhyy_BoneReapers_ArkhanBolt</defName>
+        <label>Arkhan bolt</label>
+        <graphicData>
+            <texPath>Weapons/NormalWeapons/ThetesStaffBolt</texPath>            <!-- have to add correct path when pp adds sprite -->
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>26</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
