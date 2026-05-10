@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<HeadTypeDef ParentName="pphhyy_BoneReaperHeadBase">
+		<defName>pphhyy_BoneReaperHead_ArkhanTheBlack</defName>
+		<graphicPath>Zenotypes/ArkhanHead/ArkhanTheBlackHead</graphicPath>
+	</HeadTypeDef>
+
+<GeneDef ParentName="pphhyy_BoneReaperGeneHeadBase">
+		<defName>pphhyy_ArkhanHead</defName>
+		<label>arkhan head</label>
+		<description>Carriers of this gene have a skull head with a boney jaw and purple eyes.</description>
+		<iconPath>Zenotypes/ArkhanHead/ArkhanTheBlackHead_south</iconPath>
+		<forcedHeadTypes>
+			<li>pphhyy_BoneReaperHead_ArkhanTheBlack</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>6664</displayOrderInCategory>
+	</GeneDef>	
+
+<GeneDef ParentName="pphhyy_BoneReaperBodyBase">
+    <defName>pphhyy_ArkhanBody</defName>
+		<label>arkhan body</label>
+    <labelShortAdj>skeleton</labelShortAdj>
+		<description>Carriers of this gene have an average skeletal body.</description>
+		<iconPath>Icons/XenotypeIcons/Gene_BodyThetes</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<fur>pphhyy_BoneReaperFur_Thetes</fur>
+    <bodyType>Standard</bodyType>
+    <renderNodeProperties>
+      <li>
+        <debugLabel>Fur</debugLabel>
+        <nodeClass>PawnRenderNode_Fur</nodeClass>
+        <workerClass>PawnRenderNodeWorker_Fur</workerClass>
+        <baseLayer>5</baseLayer>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <colorType>Hair</colorType>
+        <parentTagDef>Body</parentTagDef>
+      </li>
+    </renderNodeProperties>
+	<missingGeneRomanceChanceFactor>0.1</missingGeneRomanceChanceFactor>
+    <modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<forceMale>true</forceMale>
+			  <furHidesBody>true</furHidesBody>
+        <dontColourFur>true</dontColourFur>
+				<backgroundPathEndogenes>Icons/XenotypeIcons/BoneReapersGeneBackground_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Icons/XenotypeIcons/BoneReapersGeneBackground_Xenogene</backgroundPathXenogenes>        
+			</li>
+		</modExtensions>
+  </GeneDef>  
+
+</Defs>

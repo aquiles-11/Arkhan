@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+<XenotypeDef>
+    <defName>pphhyy_BoneReaper_Arkhan</defName>
+    <label>Arkhan</label>
+    <description>Archons, are said to be the final face a civilization will see before its fall. Archons control unfathomable amount of strength. The many souls in the body of an Archon at birth are in chaos, the Sepelires must bring uniformity to the souls of the body to calm the Archon. Their design is one of careful calculation that requires many souls and patience. Releasing an Archon too early causes mass destruction, being too late will allow the souls to turn the bones to ash. The Archons control the battlefield with their great strength and utilize their wings to quickly move to where they will deal the most damage.</description>
+    <descriptionShort>Archons, are said to be the final face a civilization will see before its fall. Archons control unfathomable amount of strength.</descriptionShort>
+    <iconPath>Zenotypes/ArkhanHead/ArkhanTheBlackHead_south</iconPath>
+	  <inheritable>true</inheritable>
+    <nameMaker>pphhyy_BoneReaperNamer_Male</nameMaker>
+    <nameMakerFemale>pphhyy_BoneReaperNamer_Female</nameMakerFemale>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+	  <li>pphhyy_BoneReaperPhysiology</li>
+	  <li>pphhyy_ArkhanBody</li>
+    <li>pphhyy_ArkhanHead</li>
+	  <li>PsychicAbility_Extreme</li>
+	  <li>Hair_SnowWhite</li>
+    </genes>    
+  </XenotypeDef>
+    
+</Defs>
