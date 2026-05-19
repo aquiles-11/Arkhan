@@ -7,13 +7,13 @@
     <label>Bonereaper Arkhan Start</label>
     <description>Arkhan Start</description>
     <scenario>
-      <summary>Arkhan Start.</summary>
+      <summary>Arkhan Nagashs greatest servent has come to this rimwrold to spread Holy undeath.</summary>
       <parts>
         
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
           <pawnChoiceCount>8</pawnChoiceCount>
-          <customSummary>Start with 2 Arkhan Xenotypes.</customSummary>
+          <customSummary>Start with 1 Arkhan Xenotypes.</customSummary>
           <xenotypeCounts>
             <li>
               <xenotype>pphhyy_BoneReaper_Arkhan</xenotype>
